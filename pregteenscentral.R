@@ -4,7 +4,6 @@ library(tidyverse)
 preg.teens <- readr::read_csv("C:\\Users\\User\\Desktop\\Amandla\\pregnant school children.csv")
 preg.teens
 View(preg.teens)
-colnames(centraldata)
 
 centraldata <- preg.teens[c(10,27,31,38,40,41),]%>% 
   rename(below15 = "Adolescent (10-14 years)", above15 = "(Adolescents 15-19 years)") %>% 
